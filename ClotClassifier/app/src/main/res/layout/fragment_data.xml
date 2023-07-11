@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DataFragment"
+    android:background="#2E3A7C">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Patient's Details and Results"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+         />
+
+    <TextView
+        android:id="@+id/nin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID Number"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:layout_below="@id/title"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:id="@+id/txtnin"
+        android:layout_width="207dp"
+        android:layout_below="@id/title"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/fname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Surname"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:layout_below="@id/nin"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:id="@+id/surname"
+        android:layout_width="207dp"
+        android:layout_below="@id/txtnin"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/lname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fname"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Other Names"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+    <EditText
+        android:id="@+id/othernames"
+        android:layout_width="207dp"
+        android:layout_below="@id/surname"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:background="@color/white"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/hosp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lname"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Hospital"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+    <EditText
+        android:id="@+id/hospital"
+        android:layout_width="207dp"
+        android:layout_below="@id/othernames"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:background="@color/white"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date Of Birth"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:layout_below="@id/hosp"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:id="@+id/date_of_birth"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hospital"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="27dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:inputType="date"
+        />
+
+    <TextView
+        android:id="@+id/sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:layout_below="@id/dob"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp" />
+    <Spinner
+        android:id="@+id/gender"
+        android:layout_width="207dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/date_of_birth"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="22dp"
+        android:background="@color/white"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:layout_below="@id/sex"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp" />
+    <EditText
+        android:id="@+id/contact"
+        android:layout_width="207dp"
+        android:layout_below="@id/gender"
+        android:layout_marginTop="22dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_marginLeft="140dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/clot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clot Type"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:layout_below="@id/phone"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp" />
+    <Spinner
+        android:id="@+id/clot_type"
+        android:layout_width="207dp"
+        android:layout_below="@id/contact"
+        android:layout_marginTop="22dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="140dp"
+        android:background="@color/white"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/cause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cause"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:layout_below="@id/clot"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp" />
+    <Spinner
+        android:id="@+id/possible_cause"
+        android:layout_width="207dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/clot_type"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="33dp"
+        android:background="@color/white"
+        android:textColor="@color/black" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btback"
+        android:layout_below="@id/possible_cause"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:text="CLEAR"
+        android:textSize="22dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnnextt"
+        android:layout_below="@id/possible_cause"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="20dp"
+        android:textSize="22dp"
+        android:text="SUBMIT" />
+
+</RelativeLayout>

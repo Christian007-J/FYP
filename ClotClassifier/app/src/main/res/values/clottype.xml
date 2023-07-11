@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="clot_types">
+        <item>Hemorrhagic Stroke</item>
+        <item>Ischemic Stroke</item>
+    </string-array>
+</resources>
